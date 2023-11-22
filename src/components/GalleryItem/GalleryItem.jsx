@@ -24,7 +24,10 @@ function GalleryItem({ id, url, title, description, likes, getList }) {
   const shownContent = () => {
     if (showDesc) {
       return (
-        <div style={{ height: 150, width: 150, textAlign: "center" }}>
+        <div
+          data-testid="description"
+          style={{ height: 150, width: 150, textAlign: "center" }}
+        >
           {description}
         </div>
       );
