@@ -29,7 +29,7 @@ function App() {
 
       <p>The gallery goes here!</p>
 
-      <GalleryList photo={photo} />
+      <GalleryList photo={photo} getList={getList} />
     </div>
   );
 }

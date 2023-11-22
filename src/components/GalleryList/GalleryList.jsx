@@ -1,6 +1,6 @@
 import GalleryItem from "../GalleryItem/GalleryItem";
 
-function GalleryList({ photo }) {
+function GalleryList({ photo, getList }) {
   return (
     <div data-testid="galleryList">
       {photo.map((item) => {
@@ -12,6 +12,7 @@ function GalleryList({ photo }) {
             title={item.title}
             description={item.description}
             likes={item.likes}
+            getList={getList}
           />
         );
       })}
