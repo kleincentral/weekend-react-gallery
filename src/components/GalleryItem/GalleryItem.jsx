@@ -37,7 +37,7 @@ function GalleryItem({ id, url, title, description, likes, getList }) {
   };
 
   return (
-    <div data-testid="galleryItem">
+    <div data-testid="galleryItem" className="ItemIndividual">
       <h4>{title}</h4>
       <div data-testid="toggle" onClick={toggleShowDesc}>
         {shownContent()}
